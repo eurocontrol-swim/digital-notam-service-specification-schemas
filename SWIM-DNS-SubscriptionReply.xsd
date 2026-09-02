@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.eurocontrol.int/swim/dns/1.0"
+            targetNamespace="http://www.eurocontrol.int/swim/dns/1.0"
+            elementFormDefault="qualified">
+
+    <!-- Root element -->
+    <xsd:element name="SubscriptionReply" type="SubscriptionReplyType"/>
+
+    <!-- SubscriptionReply message payload -->
+    <xsd:complexType name="SubscriptionReplyType">
+        <xsd:sequence>
+            <xsd:element name="subscriptionId" type="xsd:string"/>
+            <xsd:element name="address"        type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
