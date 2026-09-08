@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://www.eurocontrol.int/swim/dns/1.0/ResumeRequest.schema.json",
+  "title": "ResumeRequest",
+  "type": "object",
+  "properties": {
+    "action": {
+      "const": "resume"
+    }
+  },
+  "required": ["action"],
+  "additionalProperties": false
+}
